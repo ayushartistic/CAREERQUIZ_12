@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Quiz</title>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: false });
+    window.mermaid = mermaid;
+  </script>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Personalized Career Quiz</h1>
+    <form id="quizForm">
+
+  <!-- Q1 -->
+  <div class="question">
+    <p>1. Which subject did you find the easiest and most enjoyable in Class 12th?</p>
+    <label><input type="radio" name="Q1" value="A"> Mathematics</label>
+    <label><input type="radio" name="Q1" value="B"> Physics</label>
+    <label><input type="radio" name="Q1" value="C"> Chemistry</label>
+    <label><input type="radio" name="Q1" value="D"> Biology</label>
+    <label><input type="radio" name="Q1" value="E"> English/Languages</label>
+    <label><input type="radio" name="Q1" value="F"> Social Sciences</label>
+  </div>
+
+  <!-- Q2 -->
+  <div class="question">
+    <p>2. When preparing for exams, which style fits you best?</p>
+    <label><input type="radio" name="Q2" value="A"> Solving numerical problems</label>
+    <label><input type="radio" name="Q2" value="B"> Doing experiments</label>
+    <label><input type="radio" name="Q2" value="C"> Memorizing and recalling</label>
+    <label><input type="radio" name="Q2" value="D"> Writing and analyzing</label>
+    <label><input type="radio" name="Q2" value="E"> Reading case studies</label>
+  </div>
+
+  <!-- Q3 -->
+  <div class="question">
+    <p>3. In group projects, which role do you usually take?</p>
+    <label><input type="radio" name="Q3" value="A"> Problem solver</label>
+    <label><input type="radio" name="Q3" value="B"> Researcher</label>
+    <label><input type="radio" name="Q3" value="C"> Presenter</label>
+    <label><input type="radio" name="Q3" value="D"> Creative designer</label>
+    <label><input type="radio" name="Q3" value="E"> Organizer/Leader</label>
+  </div>
+
+  <!-- Q4 -->
+  <div class="question">
+    <p>4. How do you usually make decisions?</p>
+    <label><input type="radio" name="Q4" value="A"> Logical calculation</label>
+    <label><input type="radio" name="Q4" value="B"> Practical observation</label>
+    <label><input type="radio" name="Q4" value="C"> Intuition/feelings</label>
+    <label><input type="radio" name="Q4" value="D"> Discussion with people</label>
+  </div>
+
+  <!-- Q5 -->
+  <div class="question">
+    <p>5. Which of these best describes your personality?</p>
+    <label><input type="radio" name="Q5" value="A"> Analytical</label>
+    <label><input type="radio" name="Q5" value="B"> Creative</label>
+    <label><input type="radio" name="Q5" value="C"> Caring</label>
+    <label><input type="radio" name="Q5" value="D"> Confident</label>
+    <label><input type="radio" name="Q5" value="E"> Organized</label>
+  </div>
+
+  <!-- Q6 -->
+  <div class="question">
+    <p>6. If you had to solve a big problem, what would you do first?</p>
+    <label><input type="radio" name="Q6" value="A"> Break into smaller parts</label>
+    <label><input type="radio" name="Q6" value="B"> Experiment/test</label>
+    <label><input type="radio" name="Q6" value="C"> Think creatively</label>
+    <label><input type="radio" name="Q6" value="D"> Ask and collaborate</label>
+    <label><input type="radio" name="Q6" value="E"> Plan systematically</label>
+  </div>
+
+  <!-- Q7 -->
+  <div class="question">
+    <p>7. Which activity excites you the most?</p>
+    <label><input type="radio" name="Q7" value="A"> Coding/puzzles</label>
+    <label><input type="radio" name="Q7" value="B"> Experiments</label>
+    <label><input type="radio" name="Q7" value="C"> Helping people</label>
+    <label><input type="radio" name="Q7" value="D"> Writing/stories</label>
+    <label><input type="radio" name="Q7" value="E"> Debating/social topics</label>
+  </div>
+
+  <!-- Q8 -->
+  <div class="question">
+    <p>8. If you had a free day, what would you do?</p>
+    <label><input type="radio" name="Q8" value="A"> Play with gadgets</label>
+    <label><input type="radio" name="Q8" value="B"> Draw/create something</label>
+    <label><input type="radio" name="Q8" value="C"> Play sports</label>
+    <label><input type="radio" name="Q8" value="D"> Read/watch informative stuff</label>
+    <label><input type="radio" name="Q8" value="E"> Hang out and talk</label>
+  </div>
+
+  <!-- Q9 -->
+  <div class="question">
+    <p>9. Which profession do you admire most?</p>
+    <label><input type="radio" name="Q9" value="A"> Scientist/Engineer</label>
+    <label><input type="radio" name="Q9" value="B"> Doctor</label>
+    <label><input type="radio" name="Q9" value="C"> Artist/Writer</label>
+    <label><input type="radio" name="Q9" value="D"> Entrepreneur</label>
+    <label><input type="radio" name="Q9" value="E"> Lawyer/Politician</label>
+  </div>
+
+  <!-- Q10 -->
+  <div class="question">
+    <p>10. What motivates you most in a career?</p>
+    <label><input type="radio" name="Q10" value="A"> High salary</label>
+    <label><input type="radio" name="Q10" value="B"> Respect</label>
+    <label><input type="radio" name="Q10" value="C"> Creativity</label>
+    <label><input type="radio" name="Q10" value="D"> Helping others</label>
+    <label><input type="radio" name="Q10" value="E"> Stability</label>
+  </div>
+
+  <!-- Q11 -->
+  <div class="question">
+    <p>11. Which working style do you prefer?</p>
+    <label><input type="radio" name="Q11" value="A"> Desk analysis</label>
+    <label><input type="radio" name="Q11" value="B"> Meeting people</label>
+    <label><input type="radio" name="Q11" value="C"> Hands-on work</label>
+    <label><input type="radio" name="Q11" value="D"> Leading teams</label>
+    <label><input type="radio" name="Q11" value="E"> Expressing ideas</label>
+  </div>
+
+  <!-- Q12 -->
+  <div class="question">
+    <p>12. What kind of college excites you?</p>
+    <label><input type="radio" name="Q12" value="A"> Technical/Engineering</label>
+    <label><input type="radio" name="Q12" value="B"> Medical/Health sciences</label>
+    <label><input type="radio" name="Q12" value="C"> Liberal arts</label>
+    <label><input type="radio" name="Q12" value="D"> Business/Commerce</label>
+    <label><input type="radio" name="Q12" value="E"> Design/Creative</label>
+  </div>
+
+  <!-- Q13 -->
+  <div class="question">
+    <p>13. Ten years from now, where do you see yourself?</p>
+    <label><input type="radio" name="Q13" value="A"> Innovating in tech</label>
+    <label><input type="radio" name="Q13" value="B"> Helping people medically</label>
+    <label><input type="radio" name="Q13" value="C"> Running my own company</label>
+    <label><input type="radio" name="Q13" value="D"> Writing/teaching/creating</label>
+    <label><input type="radio" name="Q13" value="E"> Government/law field</label>
+  </div>
+
+  <!-- Q14 -->
+  <div class="question">
+    <p>14. If you fail in your chosen career, what would you do?</p>
+    <label><input type="radio" name="Q14" value="A"> Analyze and retry</label>
+    <label><input type="radio" name="Q14" value="B"> Find alternatives</label>
+    <label><input type="radio" name="Q14" value="C"> Switch to creativity</label>
+    <label><input type="radio" name="Q14" value="D"> Seek advice and support</label>
+    <label><input type="radio" name="Q14" value="E"> Stick with discipline</label>
+  </div>
+
+  <!-- Q15 -->
+  <div class="question">
+    <p>15. Which career cluster fits you best?</p>
+    <label><input type="radio" name="Q15" value="A"> Engineering/Tech/IT</label>
+    <label><input type="radio" name="Q15" value="B"> Medicine/Healthcare</label>
+    <label><input type="radio" name="Q15" value="C"> Arts/Media/Design</label>
+    <label><input type="radio" name="Q15" value="D"> Business/Management</label>
+    <label><input type="radio" name="Q15" value="E"> Law/Government</label>
+  </div>
+
+    <!-- Q16 -->
+  <div class="question">
+    <p>16. Which skill do you naturally pick up the fastest?</p>
+    <label><input type="radio" name="Q16" value="A"> Solving logical problems</label>
+    <label><input type="radio" name="Q16" value="B"> Understanding human body/health</label>
+    <label><input type="radio" name="Q16" value="C"> Designing or creating something new</label>
+    <label><input type="radio" name="Q16" value="D"> Managing money/resources</label>
+    <label><input type="radio" name="Q16" value="E"> Arguing logically / convincing people</label>
+  </div>
+
+  <!-- Q17 -->
+  <div class="question">
+    <p>17. During school, which type of competition did you enjoy most?</p>
+    <label><input type="radio" name="Q17" value="A"> Math/Science Olympiads</label>
+    <label><input type="radio" name="Q17" value="B"> Science exhibitions/Projects</label>
+    <label><input type="radio" name="Q17" value="C"> Sports/Physical events</label>
+    <label><input type="radio" name="Q17" value="D"> Debate/Model UN</label>
+    <label><input type="radio" name="Q17" value="E"> Art/Music/Literary competitions</label>
+  </div>
+
+  <!-- Q18 -->
+  <div class="question">
+    <p>18. If you got a chance to study abroad, which factor would matter most?</p>
+    <label><input type="radio" name="Q18" value="A"> Advanced technology labs</label>
+    <label><input type="radio" name="Q18" value="B"> Medical research opportunities</label>
+    <label><input type="radio" name="Q18" value="C"> Exposure to arts & culture</label>
+    <label><input type="radio" name="Q18" value="D"> Business and global markets</label>
+    <label><input type="radio" name="Q18" value="E"> Political science/law system</label>
+  </div>
+
+  <!-- Q19 -->
+  <div class="question">
+    <p>19. Which subject activity do you enjoy the most?</p>
+    <label><input type="radio" name="Q19" value="A"> Solving derivations/equations</label>
+    <label><input type="radio" name="Q19" value="B"> Understanding biology diagrams</label>
+    <label><input type="radio" name="Q19" value="C"> Writing essays/stories</label>
+    <label><input type="radio" name="Q19" value="D"> Analyzing markets & data</label>
+    <label><input type="radio" name="Q19" value="E"> Discussing social issues</label>
+  </div>
+
+  <!-- Q20 -->
+  <div class="question">
+    <p>20. What kind of work-life do you imagine for yourself?</p>
+    <label><input type="radio" name="Q20" value="A"> Researching & innovating daily</label>
+    <label><input type="radio" name="Q20" value="B"> Treating and caring for people</label>
+    <label><input type="radio" name="Q20" value="C"> Expressing ideas creatively</label>
+    <label><input type="radio" name="Q20" value="D"> Leading business ventures</label>
+    <label><input type="radio" name="Q20" value="E"> Working in governance/policy</label>
+  </div>
+
+
+  <button id="submit" type="submit">Submit Quiz</button>
+</form>
+
+
+    <div id="result"></div>
+  </div>
+
+  <button id="generateBtn">Generate Flowchart</button>
+  <h2 id="heading" style="text-align: center;">Visual Career Course Mapping</h2>
+  <div id="flowchart">Flowchart will appear here...</div>
+  <script src="quiz.js"></script>
+</body>
+</html>
